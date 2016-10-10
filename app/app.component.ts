@@ -5,7 +5,7 @@ import {Component} from "@angular/core";
     template: `
         <h1>Component Router</h1>
         <nav>
-            <a  routerLink="" 
+            <a  routerLink="/heroes" 
                 routerLinkActive="router-link-active" 
                 [routerLinkActiveOptions]="{ exact: true }">
                 Home

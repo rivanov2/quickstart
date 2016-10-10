@@ -1,24 +1,24 @@
 import {NgModule} from "@angular/core";
 import {BrowserModule} from "@angular/platform-browser";
 import {AppComponent} from "./app.component";
-import {CrisisListComponent} from "./crisis-center/crisis-list.component";
 import {AppRoutingModule} from "./app-routing.module";
 import {HeroesModule} from "./heroes/heroes.module";
 import {HttpModule} from "@angular/http";
 import {InMemoryWebApiModule} from "angular-in-memory-web-api";
-import {InMemHeroService} from "./in-mem-hero.service";
+import {InMemoryService} from "./in-memory.service";
+import {CrisisModule} from "./crisis-center/crisis.module";
 
 @NgModule({
   imports: [
     BrowserModule,
     AppRoutingModule,
     HeroesModule,
+    CrisisModule,
     HttpModule,
-    InMemoryWebApiModule.forRoot(InMemHeroService)
+    InMemoryWebApiModule.forRoot(InMemoryService),
   ],
   declarations: [
     AppComponent,
-    CrisisListComponent
   ],
   bootstrap: [ AppComponent ]
 })
