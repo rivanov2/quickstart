@@ -5,18 +5,14 @@ import {HeroRoutingModule} from "./heroes/hero-routing.module";
 
 @NgModule({
   imports: [
-    RouterModule.forRoot([
-      // { path: '', redirectTo: '/crisis-center', pathMatch: 'full' }
-      // {path: 'crisis-center', component: CrisisListComponent},
-      // {path: 'heroes', component: HeroListComponent,}
-    ]),
+    RouterModule.forRoot([]),
     HeroRoutingModule,
     CrisisRoutingModule
   ],
   exports: [
     RouterModule,
     CrisisRoutingModule,
-    // HeroRoutingModule
+    HeroRoutingModule
   ]
 })
 export class AppRoutingModule {
