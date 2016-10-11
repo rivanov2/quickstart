@@ -7,18 +7,20 @@ import {HttpModule} from "@angular/http";
 import {InMemoryWebApiModule} from "angular-in-memory-web-api";
 import {InMemoryService} from "./in-memory.service";
 import {CrisisModule} from "./crisis-center/crisis.module";
+import {HeroRoutingModule} from "./heroes/hero-routing.module";
 
 @NgModule({
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HeroRoutingModule,
     HeroesModule,
     CrisisModule,
     HttpModule,
     InMemoryWebApiModule.forRoot(InMemoryService),
   ],
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   bootstrap: [ AppComponent ]
 })

@@ -13,7 +13,4 @@ export class CrisisService {
    return this.http.get(this.apiURL).map<{ data: Crisis[] } >(response =>
      response.json());
   }
-  getCrisis(id: number) {
-
-  }
 }
