@@ -14,8 +14,6 @@ import {CrisisRoutingModule} from "./crisis-center/crisis-routing.module";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HeroRoutingModule,
-    CrisisRoutingModule,
     HeroesModule,
     CrisisModule,
     HttpModule,

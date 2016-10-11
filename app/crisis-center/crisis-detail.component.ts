@@ -1,13 +1,12 @@
 import {Component} from "@angular/core";
 import {Crisis} from "./crisis";
-import {CrisisService} from "./crisis-service";
+import {CrisisService} from "./crisis.service";
 @Component({
   selector: 'crisis-detail',
   template: `
     <ul>
       <li *ngFor="let crisis of crises">
-        {{ crisis.name }}  
-        {{ crisis.description }}
+        <a [routerLink]="[crisis.id]">{{ crisis.name }} {{ crisis.description }}</a>
       </li>  
     </ul>
   `

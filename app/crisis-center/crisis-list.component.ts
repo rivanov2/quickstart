@@ -1,6 +1,6 @@
 import {Component} from "@angular/core";
 import {Crisis} from "./crisis";
-import {CrisisService} from "./crisis-service";
+import {CrisisService} from "./crisis.service";
 
 @Component({
     templateUrl: 'app/crisis-center/crisis-list.component.html'
