@@ -7,7 +7,6 @@ import {HeroListComponent} from "./heroes-list-component";
   imports: [
     RouterModule.forChild([
       { path: 'heroes', component: HeroListComponent },
-      { path: 'hero', component: HeroListComponent },
       { path: 'hero/:id', component: HeroDetailComponent }
     ])
   ],

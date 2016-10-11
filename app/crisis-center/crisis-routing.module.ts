@@ -8,11 +8,11 @@ import {CrisisCenterHomeComponent} from "./crisis-center-home.component";
 @NgModule({
   imports: [
     RouterModule.forChild([
-      // {
-      //   path: '',
-      //   redirectTo: 'crisis-center',
-      //   pathMatch: 'full'
-      // },
+      {
+        path: '',
+        redirectTo: 'crisis-center',
+        pathMatch: 'full'
+      },
       {
         path: 'crisis-center',
         component: CrisisCenterComponent,
