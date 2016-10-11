@@ -8,12 +8,14 @@ import {InMemoryWebApiModule} from "angular-in-memory-web-api";
 import {InMemoryService} from "./in-memory.service";
 import {CrisisModule} from "./crisis-center/crisis.module";
 import {HeroRoutingModule} from "./heroes/hero-routing.module";
+import {CrisisRoutingModule} from "./crisis-center/crisis-routing.module";
 
 @NgModule({
   imports: [
     BrowserModule,
     AppRoutingModule,
     HeroRoutingModule,
+    CrisisRoutingModule,
     HeroesModule,
     CrisisModule,
     HttpModule,
