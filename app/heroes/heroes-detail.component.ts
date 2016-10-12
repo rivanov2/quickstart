@@ -15,8 +15,7 @@ export class HeroDetailComponent implements OnInit {
 
   constructor(private heroService: HeroService,
               private route: ActivatedRoute,
-              private router: Router,
-              private location: Location) {
+              private router: Router) {
   }
 
   ngOnInit(): void {
@@ -35,7 +34,7 @@ export class HeroDetailComponent implements OnInit {
   }
 
   goBack(): void {
-   let prevHeroId = this.hero ? this.hero.id : null;
-   this.router.navigate(['/heroes', { id: prevHeroId } ])
+    let prevHeroId = this.hero ? this.hero.id : null;
+    this.router.navigate(['/heroes', {id: prevHeroId}])
   }
 }

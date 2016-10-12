@@ -3,13 +3,13 @@ import {CommonModule} from "@angular/common";
 import {Crisis} from "./crisis";
 import {CrisisListComponent} from "./crisis-list.component";
 import {CrisisService} from "./crisis.service";
-import {CrisisRoutingModule} from "./crisis-routing.module";
+import crisisRoutes from "./crisis-routing.module"
 import {CrisisCenterComponent} from "./crisis-center.component";
 import {CrisisDetailComponent} from "./crisis-detail.component";
 import {CrisisCenterHomeComponent} from "./crisis-center-home.component";
 
 @NgModule({
-  imports: [ CommonModule, CrisisRoutingModule ],
+  imports: [ CommonModule, crisisRoutes ],
   declarations: [
     CrisisCenterComponent,
     CrisisListComponent,

@@ -1,7 +1,8 @@
-<router-outlet></router-outlet>
-<!--<ul *ngFor="let crisis of crises">-->
-  <!--<a [routerLink]="['../heroes']"-->
-     <!--routerLinkActive="router-link-active">-->
-     <!--{{ crisis.name }}-->
-  <!--</a>-->
-<!--</ul>-->
+<h2>Crisis List</h2>
+<router-outlet>
+    <ul>
+      <li *ngFor="let crisis of crises">
+          <a [routerLink]="[crisis.id]">{{crisis.name}}</a>
+      </li>
+    </ul>
+</router-outlet>

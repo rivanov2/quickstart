@@ -1,13 +1,10 @@
-import {NgModule} from "@angular/core";
-import {RouterModule} from "@angular/router";
+import {RouterModule, Routes} from "@angular/router";
 import {CrisisCenterComponent} from "./crisis-center.component";
 import {CrisisListComponent} from "./crisis-list.component";
 import {CrisisDetailComponent} from "./crisis-detail.component";
 import {CrisisCenterHomeComponent} from "./crisis-center-home.component";
 
-@NgModule({
-  imports: [
-    RouterModule.forChild([
+const routes:Routes = [
       {
         path: '',
         redirectTo: 'crisis-center',
@@ -33,11 +30,6 @@ import {CrisisCenterHomeComponent} from "./crisis-center-home.component";
           }
         ]
       }
-    ])
-  ],
-  exports: [
-    RouterModule
-  ]
-})
-export class CrisisRoutingModule {
-}
+    ];
+export default RouterModule.forChild(routes);
+
